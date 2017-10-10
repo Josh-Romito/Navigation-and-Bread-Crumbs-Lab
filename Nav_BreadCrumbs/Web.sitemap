@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home"  description="">
+    <siteMapNode url="~/Administration.aspx" title="Administration"  description="" />
+    <siteMapNode url="~/Deans.aspx" title="Deans"  description="" />
+    <siteMapNode url="~/Departments.aspx" title="Departments"  description="" />
+    <siteMapNode url="~/ComputerScience.aspx" title="Computer Science"  description="" />
+    <siteMapNode url="~/Electronics.aspx" title="Electronics"  description="" />
+    <siteMapNode url="~/Electrical.aspx" title="Electrical"  description="" />
+    <siteMapNode url="~/Mechanical.aspx" title="Mechanical"  description="" />
+    <siteMapNode url="~/Civil.aspx" title="Civil"  description="" />
+    <siteMapNode url="~/Facilities.aspx" title="Facilities"  description="" />
+    <siteMapNode url="~/Computercenter.aspx" title="Computer Center"  description="" />
+    <siteMapNode url="~/Library.aspx" title="Library"  description="" />
+    <siteMapNode url="~/Sportcomplex.aspx" title="Sport Complex"  description="" />
+    <siteMapNode url="~/Hospital.aspx" title="Hospital"  description="" />
+  </siteMapNode>
+</siteMap>

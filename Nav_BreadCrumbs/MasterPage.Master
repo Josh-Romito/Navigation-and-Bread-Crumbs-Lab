@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Nav_BreadCrumbs.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="MasterPageStyle.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border-collapse: collapse;
+            height: 100%;
+            border: 1px solid #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <table cellpadding="0" class="auto-style1">
+                    <tr style="height:100%;">
+                        <td colspan="2">
+                            <div class="header">
+                                University Banner
+                            </div>
+                            <div class="headerUser" style="width: 210px; float: right; text-align: right; margin-right:30px">
+                                Welcome WebUser
+                                <asp:LinkButton ID="lnkLogout" Text="[Logout]" runat="server"></asp:LinkButton>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height:100%;">
+                        <td style="width: 180px; vertical-align:top; padding-left:5px; ">
+                            <asp:Menu ID="Menu1" DataSourceID="MenuSource" MaximumDynamicDisplayLevels="3" StaticDisplayLevels="3" runat="server">
+                                <StaticMenuItemStyle ItemSpacing="3px" ForeColor="#999999" />
+                                <StaticHoverStyle ForeColor="#333333" />
+
+                            </asp:Menu>
+                            <asp:SiteMapDataSource ID="MenuSource" ShowStartingNode="false" runat="server"/>
+                        </td>
+                        <td style=" vertical-align:top; padding: 5px 10px 10px 10px;">
+                            <div ID="breadcrumb">
+                                <asp:SiteMapPath runat="server"></asp:SiteMapPath>
+                            </div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+        </div>
+    </form>
+</body>
+</html>
